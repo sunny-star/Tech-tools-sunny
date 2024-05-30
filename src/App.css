@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300&family=Protest+Strike&display=swap');
+/* 
+font-family: 'Lora', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Protest Strike', sans-serif;
+ */
+
+* {
+  user-select: none;
+}
+
+#logo {
+  font-family: 'Protest Strike', sans-serif;
+  color: 'grey';
+  font-size: 170%;
+}
+
+.btn-group {
+  width: 120px;
+  height: 55px;
+  margin: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Protest Strike', sans-serif ;
+  border: 1px solid #363636;
+  color: rgb(58, 56, 56);
+}
+
+.btn-group:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(92, 88, 88);
+  border: 1px solid white;
+}
+
+.disclaimer{
+  font-family: 'Merriweather', serif ;
+}
+
+.heading{
+  font-family: 'Protest Strike', sans-serif ;
+  color:grey;
+  text-decoration: underline;
+}
+
+.note{
+  font-family: 'Lora', serif;
+}
+
+.card {
+  width: 320px;
+  height: 400px;
+  cursor: pointer;
+  
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.9s ease;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-body {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(237, 199, 9);
+}
+
+.card-image-section,
+.card-info-section {
+  margin-top: 85px;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  backface-visibility: hidden;
+}
+
+.card-info-section {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text{
+  font-family:'Lora', serif ;
+  color:'#363636'
+}
